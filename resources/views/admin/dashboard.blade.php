@@ -5,11 +5,11 @@
             <!-- ============ Body content start ============= -->
             <div class="main-content">
                 <div class="breadcrumb">
-                    <h1 class="mr-2">Version 1</h1>
-                    <ul>
+                    <h1 class="mr-2">Dashboard</h1>
+                   <!-- <ul>
                         <li><a href="#">Dashboard</a></li>
                         <li>Version 1</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="separator-breadcrumb border-top"></div>
                 <div class="row">
@@ -18,7 +18,7 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Add-User"></i>
                                 <div class="content">
-                                    <p class="text-muted mt-2 mb-0">New Leads</p>
+                                    <p class="text-muted mt-2 mb-0">Clients</p>
                                     <p class="text-primary text-24 line-height-1 mb-2">205</p>
                                 </div>
                             </div>

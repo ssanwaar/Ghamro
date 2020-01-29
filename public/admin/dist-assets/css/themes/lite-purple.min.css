@@ -16819,7 +16819,7 @@ a.typo_link.text-gray-900:after {
   padding: 2rem 2rem 0;
   position: relative;
   min-height: calc(100vh - 160px);
-  background: #fff; }
+  background: #f8f9fa; }
 
 .layout-horizontal-bar .main-header {
   position: fixed;
@@ -26186,3 +26186,13 @@ blockquote {
     color: #c2c6dc;
     text-decoration: none;
     background-color: #10163a; }
+
+
+
+    .red-square {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }

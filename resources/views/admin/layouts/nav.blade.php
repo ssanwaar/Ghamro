@@ -110,26 +110,26 @@
                             <li>
                                 <div>
                                     <div>
-                                        <label class="toggle" for="drop-2">Dashboard</label><a href="#"><i class="nav-icon mr-2 i-Bar-Chart"></i> Dashboard</a>
-                                        <input id="drop-2" type="checkbox" />
+                                        <label class="toggle" for="drop-2">Dashboard</label><a href="dashboard"><i class="nav-icon mr-2 fa fa-bar-chart"></i>Dashboard</a>
+                                       <!-- <input id="drop-2" type="checkbox" />
                                         <ul>
                                             <li><a href="dashboard1.html"><i class="nav-icon mr-2 i-Clock-3"></i><span class="item-name">Version 1</span></a></li>
                                             <li><a href="dashboard2.html"><i class="nav-icon mr-2 i-Clock-4"></i><span class="item-name">Version 2</span></a></li>
                                             <li><a href="dashboard3.html"><i class="nav-icon mr-2 i-Over-Time"></i><span class="item-name">Version 3</span></a></li>
                                             <li><a href="dashboard4.html"><i class="nav-icon mr-2 i-Clock"></i><span class="item-name">Version 4</span></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div>
                                     <div>
-                                        <label class="toggle" for="drop-2">UI kits</label><a href="#"><i class="nav-icon mr-2 i-Suitcase"></i> UI kits</a>
+                                        <label class="toggle" for="drop-2">Clients</label><a href="#"><i class="nav-icon mr-2 fa fa-users"></i>Manage Clients</a>
                                         <input id="drop-2" type="checkbox" />
                                         <ul>
-                                            <li><a href="alerts.html"><i class="nav-icon mr-2 i-Bell1"></i><span class="item-name">Alerts</span></a></li>
-                                            <li><a href="accordion.html"><i class="nav-icon mr-2 i-Split-Horizontal-2-Window"></i><span class="item-name">Accordion</span></a></li>
-                                            <li><a href="badges.html"><i class="nav-icon mr-2 i-Medal-2"></i><span class="item-name">Badges</span></a></li>
+                                            <li><a href="create"><i class="nav-icon mr-2 fa fa-user-plus"></i><span class="item-name">Add New Client</span></a></li>
+                                            <li><a href="index"><i class="nav-icon mr-2 fa fa-bars"></i><span class="item-name">Clients List</span></a></li>
+                                           <!-- <li><a href="badges.html"><i class="nav-icon mr-2 i-Medal-2"></i><span class="item-name">Badges</span></a></li>
                                             <li><a href="buttons.html"><i class="nav-icon mr-2 i-Cursor-Click"></i><span class="item-name">Buttons</span></a></li>
                                             <li><a href="lists.html"><i class="nav-icon mr-2 i-Belt-3"></i><span class="item-name">Lists</span></a></li>
                                             <li><a href="pagination.html"><i class="nav-icon mr-2 i-Arrow-Next"></i><span class="item-name">Paginations</span></a></li>
@@ -139,6 +139,7 @@
                                             <li><a href="tabs.html"><i class="nav-icon mr-2 i-New-Tab"></i><span class="item-name">Tabs</span></a></li>
                                             <li><a href="tooltip.html"><i class="nav-icon mr-2 i-Speach-Bubble-8"></i><span class="item-name">Tooltip</span></a></li>
                                             <li><a href="modals.html"><i class="nav-icon mr-2 i-Duplicate-Window"></i><span class="item-name">Modals</span></a></li>
+                                            -->
                                         </ul>
                                     </div>
                                 </div>

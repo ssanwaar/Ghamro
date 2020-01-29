@@ -6,3 +6,5 @@
 <script src="{{asset('admin/dist-assets/js/plugins/echarts.min.js')}}"></script>
 <script src="{{asset('admin/dist-assets/js/scripts/echart.options.min.js')}}"></script>
 <script src="{{asset('admin/dist-assets/js/scripts/dashboard.v1.script.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/plugins/datatables.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/scripts/datatables.script.min.js')}}"></script>
