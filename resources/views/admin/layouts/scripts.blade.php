@@ -8,3 +8,8 @@
 <script src="{{asset('admin/dist-assets/js/scripts/dashboard.v1.script.min.js')}}"></script>
 <script src="{{asset('admin/dist-assets/js/plugins/datatables.min.js')}}"></script>
 <script src="{{asset('admin/dist-assets/js/scripts/datatables.script.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/scripts/form.validation.script.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/plugins/sweetalert2.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/scripts/sweetalert.script.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/plugins/toastr.min.js')}}"></script>
+<script src="{{asset('admin/dist-assets/js/scripts/toastr.script.min.js')}}"></script>

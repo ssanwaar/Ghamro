@@ -74,7 +74,10 @@
                                     <div class="col red-square">
                                         <div class="col-md-6 form-group mb-3 style">
                                             <label for="firstName2">Full Name</label>
-                                            <input class="form-control form-control-rounded" id="firstName2" type="text" name="name" placeholder="Enter your first name" />
+                                            <input class="form-control form-control-rounded @error('name') is-invalid @enderror" id="firstName2" type="text" name="name" placeholder="Enter your first name" />
+                                            @error('name')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                        <!-- <div class="col-md-6 form-group mb-3">
                                             <label for="lastName2">Last name</label>
@@ -83,16 +86,32 @@
                                         -->
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="exampleInputEmail2">Email address</label>
-                                            <input class="form-control form-control-rounded" id="exampleInputEmail2" type="email" name="email" placeholder="Enter email" />
+                                            <input class="form-control form-control-rounded @error('email') is-invalid @enderror" id="exampleInputEmail2" type="email" name="email" placeholder="Enter email" />
+                                            @error('email')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="phone1">Phone</label>
-                                            <input class="form-control form-control-rounded" id="phone1" name="phone" placeholder="Enter phone" />
+                                            <input class="form-control form-control-rounded @error('phone') is-invalid @enderror" id="phone1" name="phone" placeholder="Enter phone" />
+                                            @error('phone')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
-                                            <label for="credit2">Account Manager</label>
-                                            <input class="form-control form-control-rounded" id="credit2" name="account_manager" placeholder="Account Manager" />
+                                            <label for="phone1">Account manager</label>
+                                            <input class="form-control form-control-rounded @error('manager') is-invalid @enderror" id="credit2" name="manager" placeholder="Client Manager" />
+                                            @error('manager')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
                                         </div>
+                                        <!-- <div class="col-md-6 form-group mb-3">
+                                            <label for="credit2">Account Manager</label>
+                                            <input class="form-control form-control-rounded @error('manager') is-invalid @enderror" id="credit2" name="account_manager" placeholder="Account Manager" />
+                                            @error('manager')
+                                            <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
+                                        </div> -->
                                         <!--
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="website2">Website</label>
@@ -112,7 +131,7 @@
                                             </select>
                                         </div> -->
                                         <div class="col-md-12 red-square">
-                                            <button class="btn btn-primary">Save Client's Details</button>
+                                        <button class="btn btn-primary">Save Client's Details</button>
                                         </div>
                                     </div>
                                 </form>

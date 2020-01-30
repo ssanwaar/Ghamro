@@ -38,15 +38,17 @@
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
+                                        @foreach ($clients as $client)
                                         <tbody>
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
+                                                <td>{{ $client->id }}</td>
+                                                <td>{{ $client->name }}</td>
+                                                <td>{{ $client->phone }}</td>
+                                                <td>{{ $client->email }}</td>
+                                                <td>{{ $client->manager }}</td>
+                                                <td></td>
                                             </tr>
+                                        @endforeach
                                             <!-- <tr>
                                                 <td>Garrett Winters</td>
                                                 <td>Accountant</td>

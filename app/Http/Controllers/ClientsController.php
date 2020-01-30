@@ -17,7 +17,8 @@ class ClientsController extends Controller
     public function index()
     {
         //
-        return view('admin.clients.index');
+        $clients = Clients::all();
+        return view('admin.clients.index',compact('clients'));
     }
 
     /**
@@ -45,15 +46,20 @@ class ClientsController extends Controller
             'name' => 'required',
             'email' => 'required',
             'phone' => 'required',
-            'account_manager' => 'required'
+            'manager' => 'required'
         ]);
         $item = new Clients();
         $item->name = $request->name;
         $item->email = $request->email;
         $item->phone = $request->phone;
-        $item->account_manager = $request->account_manager;
+        $item->manager = $request->manager;
         $item->save();
-        return redirect()->route('admin.clients.create')->with('success','Dish Added Successfully');
+
+        $notification = array(
+            'message' => 'Post created successfully!',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.clients.create')->with($notification);
 
     }
 

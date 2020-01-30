@@ -8,5 +8,8 @@
     <link href="{{asset('admin/dist-assets/css/plugins/perfect-scrollbar.min.css')}}" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset('admin/dist-assets/css/plugins/datatables.min.css')}}" />
-
+    <link rel="stylesheet" href="{{asset('admin/dist-assets/css/plugins/sweetalert2.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('admin/dist-assets/css/plugins/toastr.css')}}" />
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css"> -->
 </head>
