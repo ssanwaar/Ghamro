@@ -69,11 +69,12 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <div class="card-title mb-3 fa fa-arrow-circle-right"><!--Input Client's Details-->   <a href="index">See Clients Added</a></div>
-                                <form>
+                                <form method="POST" action="{{ route('clients.store') }}" enctype="multipart/form-data">
+                                {{ csrf_field() }}
                                     <div class="col red-square">
                                         <div class="col-md-6 form-group mb-3 style">
                                             <label for="firstName2">Full Name</label>
-                                            <input class="form-control form-control-rounded" id="firstName2" type="text" placeholder="Enter your first name" />
+                                            <input class="form-control form-control-rounded" id="firstName2" type="text" name="name" placeholder="Enter your first name" />
                                         </div>
                                        <!-- <div class="col-md-6 form-group mb-3">
                                             <label for="lastName2">Last name</label>
@@ -82,15 +83,15 @@
                                         -->
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="exampleInputEmail2">Email address</label>
-                                            <input class="form-control form-control-rounded" id="exampleInputEmail2" type="email" placeholder="Enter email" />
+                                            <input class="form-control form-control-rounded" id="exampleInputEmail2" type="email" name="email" placeholder="Enter email" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="phone1">Phone</label>
-                                            <input class="form-control form-control-rounded" id="phone1" placeholder="Enter phone" />
+                                            <input class="form-control form-control-rounded" id="phone1" name="phone" placeholder="Enter phone" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label for="credit2">Account Manager</label>
-                                            <input class="form-control form-control-rounded" id="credit2" placeholder="Account Manager" />
+                                            <input class="form-control form-control-rounded" id="credit2" name="account_manager" placeholder="Account Manager" />
                                         </div>
                                         <!--
                                         <div class="col-md-6 form-group mb-3">

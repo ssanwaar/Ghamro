@@ -15,13 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/create', function () {
-    return view('admin/clients/create');
-});
-
-Route::get('/index', function () {
-    return view('admin/clients/index');
-});
 
 Route::get('dashboard', 'DashboardController@index')->name('admin.dashboard');
+
+// Clients Routes
+Route::get('index', 'ClientsController@index')->name('admin.clients.index');
+Route::get('create', 'ClientsController@create')->name('admin.clients.create');
+Route::post('clients', 'ClientsController@store')->name('clients.store');
+
 
