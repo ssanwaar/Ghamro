@@ -56,7 +56,7 @@ class ClientsController extends Controller
         $item->save();
 
         $notification = array(
-            'message' => 'Post created successfully!',
+            'message' => 'Clients Details Saved Successfully!',
             'alert-type' => 'success'
         );
         return redirect()->route('admin.clients.create')->with($notification);
@@ -83,6 +83,8 @@ class ClientsController extends Controller
     public function edit($id)
     {
         //
+        $client = Clients::where('id',$id)->first();
+        return view('admin/clients/edit',compact('client'));
     }
 
     /**
@@ -95,6 +97,19 @@ class ClientsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $data = $request->all();
+        $client = Clients::where('id',$id)->first();
+        $client->name = $request->name;
+        $client->email = $request->email;
+        $client->phone = $request->phone;
+        $client->manager = $request->manager;
+        $client->save();
+
+        $notification = array(
+            'message' => 'Clients Details Updated Successfully!',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.clients.index')->with($notification);
     }
 
     /**
@@ -106,5 +121,15 @@ class ClientsController extends Controller
     public function destroy($id)
     {
         //
+        $client = Clients::find($id);
+        $client->delete();
+
+        $notification = array(
+            'message' => 'Client Deleted Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+        
     }
 }

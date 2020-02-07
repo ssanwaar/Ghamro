@@ -110,7 +110,7 @@
                             <li>
                                 <div>
                                     <div>
-                                        <label class="toggle" for="drop-2">Dashboard</label><a href="dashboard"><i class="nav-icon mr-2 fa fa-bar-chart"></i>Dashboard</a>
+                                        <label class="toggle" for="drop-2">Dashboard</label><a href="{{ route('admin.dashboard') }}"><i class="nav-icon mr-2 fa fa-bar-chart"></i>Dashboard</a>
                                        <!-- <input id="drop-2" type="checkbox" />
                                         <ul>
                                             <li><a href="dashboard1.html"><i class="nav-icon mr-2 i-Clock-3"></i><span class="item-name">Version 1</span></a></li>

@@ -19,7 +19,7 @@
                             <div class="card-body text-center"><i class="i-Add-User"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Clients</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2">205</p>
+                                    <p class="text-primary text-24 line-height-1 mb-2">{{ $clientscount }}</p>
                                 </div>
                             </div>
                         </div>

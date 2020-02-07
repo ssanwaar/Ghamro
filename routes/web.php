@@ -19,8 +19,11 @@ Route::get('/', function () {
 Route::get('dashboard', 'DashboardController@index')->name('admin.dashboard');
 
 // Clients Routes
+Route::resource('clients','ClientsController');
 Route::get('index', 'ClientsController@index')->name('admin.clients.index');
 Route::get('create', 'ClientsController@create')->name('admin.clients.create');
 Route::post('clients', 'ClientsController@store')->name('clients.store');
+
+
 
 

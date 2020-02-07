@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\clients;
 
 class DashboardController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.dashboard');
+        $clientscount = clients::count();
+        return view('admin.dashboard', compact('clientscount'));
     }
 }
